@@ -10,12 +10,16 @@ import { HomeComponent } from './home/home.component';
 import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 
+
+import { ProductListComponent } from './productwebsite//productlist/productlist.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     NavMenuComponent,
     HomeComponent,
     CounterComponent,
+    ProductListComponent,
     FetchDataComponent
   ],
   imports: [
@@ -25,6 +29,7 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'counter', component: CounterComponent },
+      { path: 'prod-data', component: ProductListComponent },
       { path: 'fetch-data', component: FetchDataComponent },
     ])
   ],
