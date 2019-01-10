@@ -5,7 +5,7 @@
       <tr>
       <th>Product</th>
       
-      <th>Description</th>
+      <th>Price</th>
       
       <th>Add to cart</th>
      
@@ -13,9 +13,9 @@
 
     </thead>
     <tbody>
-      <tr>
-        <th>heinx</th>
-        <th>Sauce</th>
+      <tr *ngFor="let item of items">
+        <th>{{item.item_Name}}</th>
+        <th>${{item.item_Price}}</th>
         <th><button class="btn primary">Add to Cart</button></th>
       </tr>
       

@@ -12,6 +12,7 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
 
 
 import { ProductListComponent } from './productwebsite//productlist/productlist.component';
+import { ItemDetailsService } from './productwebsite/services/itemservice';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,7 @@ import { ProductListComponent } from './productwebsite//productlist/productlist.
       { path: 'fetch-data', component: FetchDataComponent },
     ])
   ],
-  providers: [],
+  providers: [ItemDetailsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
