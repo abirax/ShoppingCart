@@ -31,6 +31,9 @@ namespace ShoppingCartFunctionality.Data
         [Required]
         [Display(Name = "AddedBy")]
         public string AddedBy { get; set; }
+        [NotRequired]
+        [Display(Name = "ModifiedDate")]
+        public DateTime ModifiedDate { get; set; }
     }
 
 }
